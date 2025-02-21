@@ -45,3 +45,11 @@ bantime  = 1h          # Ban for 1 hour
 findtime = 10m         # 10-minute time window for failed attempts
 maxretry = 5           # Max 3 failed attempts before banning
 ```
+
+- sudo systemctl restart fail2ban
+- sudo systemctl enable fail2ban : Enable Fail2Ban to start on boot
+- sudo systemctl status fail2ban : check if active
+- sudo fail2ban-client status : check status
+- sudo fail2ban-client status sshd : check specific jail section status
+
+  
