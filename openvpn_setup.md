@@ -54,11 +54,13 @@ vi /etc/openvpn/client2.ovpn
 -----END CERTIFICATE-----
 </ca>
 
+
 <cert>
 -----BEGIN CERTIFICATE-----
 # 这里是原 client1 的证书
 -----END CERTIFICATE-----
 </cert>
+
 
 <key>
 -----BEGIN PRIVATE KEY-----
@@ -66,13 +68,17 @@ vi /etc/openvpn/client2.ovpn
 -----END PRIVATE KEY-----
 </key>
 
+
 <tls-auth>
 -----BEGIN OpenVPN Static key V1-----
 # 这里是 TLS 密钥（如果使用了 tls-auth 选项）
 -----END OpenVPN Static key V1-----
 </tls-auth>
+
 然后：
 
-替换 <cert> 中的内容（来自 pki/issued/client2.crt）。
-替换 <key> 中的内容（来自 pki/private/client2.key）。
+替换 <cert> 中的内容（来自 pki/issued/client2.crt）
+
+替换 <key> 中的内容（来自 pki/private/client2.key）
+
 保持 <ca> 和 <tls-auth> 不变，因为这些是所有客户端通用的。
