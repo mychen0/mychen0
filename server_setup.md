@@ -32,11 +32,12 @@
 - cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 - edit jail.local
    - [sshd] section is already exist, add or edit
-
+```
 enabled = true           # Enable SSH protection
 port    = <your ssh port> # Port to protect (default is 22)
 filter  = sshd           # Use the SSH filter
 maxretry = 5             # Max failed login attempts before banning
+```
 
 - [DEFAULT] section is already exist, add or edit:
 bantime  = 1h          # Ban for 1 hour
