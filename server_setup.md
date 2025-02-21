@@ -40,6 +40,8 @@ maxretry = 5             # Max failed login attempts before banning
 ```
 
 - [DEFAULT] section is already exist, add or edit:
+```
 bantime  = 1h          # Ban for 1 hour
 findtime = 10m         # 10-minute time window for failed attempts
 maxretry = 5           # Max 3 failed attempts before banning
+```
