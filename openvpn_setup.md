@@ -1,4 +1,18 @@
+## OPENVPN 设置
 
+1. get script:
+
+login vps:  run
+
+curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
+chmod +x openvpn-install.sh
+
+
+or  login vps, scp openvpn-install.sh to vps
+
+2. run script using default option to the end
+
+3. scp ovpn file to client device
 
 ## 多个设备需要多个ovpn文件，配置方法：
 
