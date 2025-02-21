@@ -16,40 +16,38 @@ cd /etc/openvpn/easy-rsa
 🔹 2. 生成 client2 的证书和密钥
 执行以下命令：
 
-sh
-Copy
-Edit
+
 ./easyrsa build-client-full client2 nopass
+
 client2：这是新的客户端名称，你可以换成其他名称（比如 iphone 或 laptop）。
+
 nopass：表示不为私钥设置密码（如果需要密码保护，可以去掉 nopass）。
+
 🔸 生成的文件（存储在 pki 目录下）：
+
 pki/private/client2.key（客户端私钥）
+
 pki/issued/client2.crt（客户端证书）
+
 pki/ca.crt（CA 证书，所有客户端共享）
+
 pki/ta.key（TLS 认证密钥，所有客户端共享）
+
 🔹 3. 复制 client.ovpn 并创建 client2.ovpn
-sh
-Copy
-Edit
+
 cp /etc/openvpn/client.ovpn /etc/openvpn/client2.ovpn
 然后，编辑 client2.ovpn：
 
-sh
-Copy
-Edit
+
 nano /etc/openvpn/client2.ovpn
 或使用 vi 编辑：
 
-sh
-Copy
-Edit
 vi /etc/openvpn/client2.ovpn
+
 🔹 4. 替换 client2 的证书和密钥
 找到 .ovpn 配置中的以下部分：
 
-ini
-Copy
-Edit
+
 <ca>
 -----BEGIN CERTIFICATE-----
 # 这里是 CA 证书内容
