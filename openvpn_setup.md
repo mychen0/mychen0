@@ -49,18 +49,8 @@ vi /etc/openvpn/client2.ovpn
 找到 .ovpn 配置中的以下部分：
 
 
-<ca>
-
-  -----BEGIN CERTIFICATE-----
-
-   这里是 CA 证书内容
-
------END CERTIFICATE-----
-
-</ca>
-
-
 <cert>
+  
 -----BEGIN CERTIFICATE-----
   
  这里是原 client1 的证书
@@ -80,14 +70,6 @@ vi /etc/openvpn/client2.ovpn
 </key>
 
 
-<tls-auth>
------BEGIN OpenVPN Static key V1-----
-  
-这里是 TLS 密钥（如果使用了 tls-auth 选项）
-
------END OpenVPN Static key V1-----
-
-</tls-auth>
 
 然后：
 
