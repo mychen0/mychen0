@@ -45,34 +45,48 @@ nano /etc/openvpn/client2.ovpn
 vi /etc/openvpn/client2.ovpn
 
 🔹 4. 替换 client2 的证书和密钥
+
 找到 .ovpn 配置中的以下部分：
 
 
 <ca>
------BEGIN CERTIFICATE-----
-# 这里是 CA 证书内容
+
+  -----BEGIN CERTIFICATE-----
+
+  # 这里是 CA 证书内容
+
 -----END CERTIFICATE-----
+
 </ca>
 
 
 <cert>
 -----BEGIN CERTIFICATE-----
+  
 # 这里是原 client1 的证书
+
 -----END CERTIFICATE-----
+
 </cert>
 
 
 <key>
 -----BEGIN PRIVATE KEY-----
+  
 # 这里是原 client1 的私钥
+
 -----END PRIVATE KEY-----
+
 </key>
 
 
 <tls-auth>
 -----BEGIN OpenVPN Static key V1-----
+  
 # 这里是 TLS 密钥（如果使用了 tls-auth 选项）
+
 -----END OpenVPN Static key V1-----
+
 </tls-auth>
 
 然后：
