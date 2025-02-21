@@ -49,7 +49,7 @@ vi /etc/openvpn/client2.ovpn
 找到 .ovpn 配置中的以下部分：
 
 
-<cert>
+< cert >
   
 -----BEGIN CERTIFICATE-----
   
@@ -57,7 +57,7 @@ vi /etc/openvpn/client2.ovpn
 
 -----END CERTIFICATE-----
 
-</cert>
+< /cert >
 
 
 <key>
