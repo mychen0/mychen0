@@ -22,3 +22,6 @@
 - generate key-pair in Termius (or other tools)
 - copy the pubkey to server ~/.ssh/authorized_keys (new_user)
 - try Termius connection
+
+# Check SSH log to ensure no attack
+- sudo vi /var/log/auth.log
