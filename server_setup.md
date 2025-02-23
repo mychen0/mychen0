@@ -10,8 +10,10 @@
     - Port <new_port_number>  : do not use default 22
     - PermitRootLogin no
     - PasswordAuthentication no
+    - also check in the included config files
   - sudo systemctl restart sshd :  restart the SSHD
   - sudo ss -tlnp : check sshd is listening on <new_port_number>
+  - if port 22 is still working, kill the pid manually, then restart ssh
 
 # Firewall setup
   - sudo iptables -L -n -v  : list all rules
