@@ -54,4 +54,14 @@ maxretry = 5           # Max 3 failed attempts before banning
 - sudo fail2ban-client status : check status
 - sudo fail2ban-client status sshd : check specific jail section status
 
+# USE tmux to manage headless(no GIU aka. CLI only) linux server
+
+Use tmux can keep your session active when you disconnect from SSH
+
+- tmux new -s <session_name> : open a new session
+- tmux ls : list all sessions
+- tmux attach -t <session_name> : attach to a session
+- tmux kill-session -t <session_name> :
+- in session: ctrl+b then D, deattach the session
+- in session: ctrl+b then ? , show help info
   
