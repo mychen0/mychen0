@@ -5,6 +5,10 @@
 - su <new_user> : change to new user
 - sudo whoami : enter passwd, it should return root
 
+# SET timezone
+
+- timedatectl set-timezone Asia/Shanghai
+
 # SSH Port setup
   - sudo vi /etc/ssh/sshd_config : edit for protection from SSHD attack (change port/disable root login/disable passwd-based login)
     - Port <new_port_number>  : do not use default 22
