@@ -3,6 +3,7 @@
 "==================="
 set wildmenu"按TAB键时命令行自动补齐"
 set ignorecase"忽略大小写"
+set smartcase
 set number "显示行号"
 set visualbell"禁止响铃"
 set ruler"显示当前光标位置"
